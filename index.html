@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Dzeru Code is a technology company building websites, mobile apps, UI/UX designs, and custom software solutions.">
+<title>Dzeru Code | Technology Company</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Dzeru Code</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero fade-in">
+    <div>
+      <h2>Building Smart Digital Solutions</h2>
+      <p>We design and develop reliable websites, mobile apps, and custom software for modern businesses.</p>
+      <a class="btn" href="#contact">Work With Us</a>
+    </div>
+    <div class="illustration">
+      <svg viewBox="0 0 400 260">
+        <rect x="40" y="40" width="320" height="180" rx="16" fill="#020617" stroke="#4f46e5"/>
+        <rect x="70" y="80" width="120" height="18" fill="#4f46e5"/>
+        <rect x="70" y="120" width="200" height="14" fill="#1e293b"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="services" class="services fade-in">
+    <a class="card" href="services/web-development.html"><h4>Web Development</h4><p>Modern, responsive websites and web apps.</p></a>
+    <a class="card" href="services/mobile-apps.html"><h4>Mobile Apps</h4><p>Android & cross-platform applications.</p></a>
+    <a class="card" href="services/ui-ux-design.html"><h4>UI / UX Design</h4><p>User-focused design systems.</p></a>
+    <a class="card" href="services/software-solutions.html"><h4>Software Solutions</h4><p>Custom business software.</p></a>
+  </section>
+
+  <section id="contact" class="fade-in" style="margin-top:4rem;">
+    <h3>Contact Us</h3>
+    <form onsubmit="sendWhatsApp(event)" style="max-width:420px;">
+      <input id="name" required placeholder="Name" style="width:100%;margin:.4rem 0;padding:.6rem;border-radius:8px;border:none;">
+      <input id="email" required type="email" placeholder="Email" style="width:100%;margin:.4rem 0;padding:.6rem;border-radius:8px;border:none;">
+      <textarea id="message" required placeholder="Message" style="width:100%;margin:.4rem 0;padding:.6rem;border-radius:8px;border:none;"></textarea>
+      <button class="btn" type="submit">Send via WhatsApp</button>
+      <p id="success" style="display:none;color:var(--primary);margin-top:.5rem;">Message ready. WhatsApp will open.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Dzeru Code</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
